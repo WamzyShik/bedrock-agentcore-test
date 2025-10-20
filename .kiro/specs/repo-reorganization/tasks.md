@@ -247,7 +247,11 @@
   - Update conftest.py with fixture paths
   - _Requirements: 4.5_
 
-- [ ] 4.4 Update pytest configuration
+- [x] 4.4 Update pytest configuration
+
+
+
+
   - Update pyproject.toml [tool.pytest.ini_options]
   - Set testpaths = ["tests"]
   - Update coverage source paths

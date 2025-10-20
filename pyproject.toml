@@ -115,7 +115,10 @@ testpaths = [
 
 [tool.coverage.run]
 branch = true
-source = ["src"]
+source = [
+    "src/bedrock_agentcore_starter_toolkit",
+    "src/fraud_detection"
+]
 context = "thread"
 parallel = true
 concurrency = ["thread", "multiprocessing"]
