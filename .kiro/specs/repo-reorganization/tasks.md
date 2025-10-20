@@ -235,7 +235,13 @@
   - Update test imports and fixture paths
   - _Requirements: 4.2, 4.4_
 
-- [ ] 4.3 Move test utilities and fixtures
+- [x] 4.3 Move test utilities and fixtures
+
+
+
+
+
+
   - Move shared test utilities to tests/fixtures/utils/
   - Move test data to tests/fixtures/data/
   - Update conftest.py with fixture paths
