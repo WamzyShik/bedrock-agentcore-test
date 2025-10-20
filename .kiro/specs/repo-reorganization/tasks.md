@@ -258,7 +258,10 @@
   - Verify test discovery works
   - _Requirements: 4.6, 15.2_
 
+
+
 - [ ] 4.5 Run test suite validation
+
   - Run pytest with new structure
   - Compare results against baseline
   - Fix any test discovery issues
