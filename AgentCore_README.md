@@ -97,5 +97,5 @@ pip install bedrock-agentcore-starter-toolkit
 ## 📝 License & Contributing
 
 - **License:** Apache 2.0 - see [LICENSE.txt](LICENSE.txt)
-- **Contributing:** See [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Contributing:** See [CONTRIBUTING.md](docs/project/CONTRIBUTING.md)
 - **Security:** Report vulnerabilities via [SECURITY.md](SECURITY.md)
