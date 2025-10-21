@@ -1,41 +1,34 @@
-# Scripts
+Comprehensive documentation for the fraud detection system.
+Navigation
+Architecture
 
-Utility scripts for development, security, release management, and general utilities.
+    System architecture and design decisions
+    Component diagrams and relationships
+    Data flow and processing pipelines
 
-## Categories
+API Reference
 
-### Security (`security/`)
-- Security auditing and checking scripts
-- Vulnerability scanning
-- Compliance validation
+    API documentation and endpoints
+    Request/response formats
+    Authentication and authorization
 
-### Release (`release/`)
-- Version bumping
-- Release preparation
-- Release validation
+Guides
 
-### Development (`development/`)
-- Development environment setup
-- Testing utilities
-- Branch protection setup
+    Getting started guide
+    Deployment guides
+    Feature-specific guides
+    Best practices
 
-### Utilities (`utilities/`)
-- Data loading and generation
-- Currency conversion
-- Model checking
-- General-purpose utilities
+Operations
 
-### Reorganization (`reorganization/`)
-- Repository reorganization scripts
-- Dependency scanning
-- Import updating
+    Operations runbook
+    Troubleshooting guide
+    Monitoring and alerting
+    Maintenance procedures
 
-## Usage
+Project
 
-Most scripts can be run directly:
-
-```bash
-python scripts/security/security_check.py
-```
-
-See individual script files for specific usage instructions and requirements.
+    Security policy
+    Contributing guidelines
+    Code of conduct
+    Changelog
