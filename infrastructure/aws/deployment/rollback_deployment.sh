@@ -38,7 +38,7 @@ echo "Rolling back to: ${PREVIOUS_STACK} stack"
 
 # Verify previous stack exists and is healthy
 echo "Step 1: Verifying ${PREVIOUS_STACK} stack health..."
-python scripts/health_check.py \
+python ../../../scripts/health_check.py \
   --environment "${ENVIRONMENT}" \
   --stack "${PREVIOUS_STACK}"
 
@@ -62,7 +62,7 @@ echo "Step 3: Verifying rollback..."
 sleep 30
 
 # Health check after rollback
-python scripts/health_check.py \
+python ../../../scripts/health_check.py \
   --environment "${ENVIRONMENT}" \
   --stack "${PREVIOUS_STACK}"
 
@@ -74,7 +74,7 @@ fi
 
 # Run smoke tests
 echo "Step 4: Running smoke tests..."
-python tests/run_all_tests.py \
+python ../../../tests/run_all_tests.py \
   --quick \
   --environment "${ENVIRONMENT}" \
   --stack "${PREVIOUS_STACK}"
@@ -91,7 +91,7 @@ echo "Failed stack (${CURRENT_ACTIVE}) is still running for investigation"
 echo "========================================="
 
 # Send notification
-python scripts/send_notification.py \
+python ../../../scripts/send_notification.py \
   --type "rollback" \
   --environment "${ENVIRONMENT}" \
   --from-stack "${CURRENT_ACTIVE}" \
@@ -101,4 +101,4 @@ echo "To investigate failed ${CURRENT_ACTIVE} stack:"
 echo "  aws logs tail /aws/lambda/fraud-detection-stream-processor-${ENVIRONMENT}-${CURRENT_ACTIVE} --follow"
 echo ""
 echo "To decommission failed ${CURRENT_ACTIVE} stack after investigation:"
-echo "  ./scripts/decommission_stack.sh ${ENVIRONMENT} ${CURRENT_ACTIVE}"
+echo "  ./infrastructure/aws/deployment/decommission_stack.sh ${ENVIRONMENT} ${CURRENT_ACTIVE}"

@@ -308,7 +308,7 @@ jobs:
       
       - name: Deploy with blue-green strategy
         run: |
-          ./scripts/deploy_blue_green.sh production
+          ./infrastructure/aws/deployment/deploy_blue_green.sh production
       
       - name: Run smoke tests
         run: |
@@ -321,7 +321,7 @@ jobs:
       - name: Rollback on failure
         if: failure()
         run: |
-          ./scripts/rollback_deployment.sh production
+          ./infrastructure/aws/deployment/rollback_deployment.sh production
       
       - name: Notify deployment
         uses: 8398a7/action-slack@v3

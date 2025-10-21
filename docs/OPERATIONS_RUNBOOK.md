@@ -143,7 +143,7 @@ This runbook provides step-by-step procedures for common operational tasks, inci
 6. **Rollback if Needed**:
    ```bash
    # If issues detected
-   ./scripts/rollback_deployment.sh production
+   ./infrastructure/aws/deployment/rollback_deployment.sh production
    ```
 
 ### 2. Scaling System Resources
@@ -316,7 +316,7 @@ This runbook provides step-by-step procedures for common operational tasks, inci
 4. **Mitigate** (< 30 minutes):
    ```bash
    # Option 1: Rollback if recent deployment
-   ./scripts/rollback_deployment.sh production
+   ./infrastructure/aws/deployment/rollback_deployment.sh production
    
    # Option 2: Increase resources if capacity issue
    aws lambda put-function-concurrency \

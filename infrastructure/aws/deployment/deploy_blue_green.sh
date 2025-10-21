@@ -42,8 +42,8 @@ echo "Deploying to: ${TARGET_COLOR} stack"
 
 # Deploy to target stack
 echo "Step 1: Deploying infrastructure to ${TARGET_COLOR} stack..."
-cd aws_infrastructure
-python deploy_full_infrastructure.py \
+cd "$(dirname "$0")/.."
+python deployment/deploy_full_infrastructure.py \
   --environment "${ENVIRONMENT}" \
   --region "${REGION}" \
   --stack-suffix "${TARGET_COLOR}"
@@ -72,7 +72,7 @@ aws lambda wait function-updated \
 
 # Run health checks
 echo "Step 4: Running health checks on ${TARGET_COLOR} stack..."
-python ../scripts/health_check.py \
+python ../../../scripts/health_check.py \
   --environment "${ENVIRONMENT}" \
   --stack "${TARGET_COLOR}"
 
@@ -83,7 +83,7 @@ fi
 
 # Run smoke tests
 echo "Step 5: Running smoke tests..."
-python ../tests/run_all_tests.py \
+python ../../../tests/run_all_tests.py \
   --quick \
   --environment "${ENVIRONMENT}" \
   --stack "${TARGET_COLOR}"
@@ -111,7 +111,7 @@ echo "Step 7: Monitoring new stack for 5 minutes..."
 sleep 300
 
 # Final health check
-python ../scripts/health_check.py \
+python ../../../scripts/health_check.py \
   --environment "${ENVIRONMENT}" \
   --stack "${TARGET_COLOR}"
 
@@ -137,4 +137,4 @@ echo "========================================="
 
 # Optional: Decommission old stack after verification period
 echo "To decommission old ${CURRENT_ACTIVE} stack, run:"
-echo "./scripts/decommission_stack.sh ${ENVIRONMENT} ${CURRENT_ACTIVE}"
+echo "./infrastructure/aws/deployment/decommission_stack.sh ${ENVIRONMENT} ${CURRENT_ACTIVE}"

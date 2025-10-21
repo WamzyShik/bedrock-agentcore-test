@@ -270,20 +270,30 @@
   - Document any test changes needed
   - _Requirements: 1.3, 4.6_
 
-- [ ] 5. Consolidate infrastructure code
+- [-] 5. Consolidate infrastructure code
+
+
+
   - Merge AWS infrastructure directories
   - Organize deployment scripts
   - Update infrastructure references
   - _Requirements: 6.1, 6.2, 6.3_
 
-- [ ] 5.1 Merge AWS infrastructure directories
+
+- [x] 5.1 Merge AWS infrastructure directories
+
+
+
+
   - Move aws_infrastructure/ contents to infrastructure/aws/
   - Move aws_bedrock_agent/ deployment files to infrastructure/aws/bedrock/
   - Move infrastructure/cdk_app.py to infrastructure/cdk/
   - Organize by AWS service/function
   - _Requirements: 6.1, 6.2_
 
-- [ ] 5.2 Organize deployment scripts
+- [-] 5.2 Organize deployment scripts
+
+
   - Move deployment scripts to infrastructure/aws/deployment/
   - Move scripts/deploy_blue_green.sh to infrastructure/aws/deployment/
   - Move scripts/rollback_deployment.sh to infrastructure/aws/deployment/
@@ -295,6 +305,7 @@
   - Update import paths in infrastructure code
   - Create infrastructure/README.md with usage guide
   - _Requirements: 6.5, 6.6_
+
 
 - [ ] 6. Move examples and demos
   - Consolidate all demo files
@@ -343,6 +354,7 @@
   - _Requirements: 5.5_
 
 - [ ] 7. Consolidate documentation
+
   - Merge documentation directories
   - Organize by purpose
   - Update all links
@@ -392,6 +404,7 @@
   - Verify all links work
   - _Requirements: 3.6_
 
+
 - [ ] 8. Organize scripts and utilities
   - Categorize utility scripts
   - Move to appropriate locations
@@ -399,6 +412,10 @@
   - _Requirements: 9.1, 9.2, 9.5_
 
 - [ ] 8.1 Organize security scripts
+
+
+
+
   - Move security_check.py to scripts/security/
   - Move run_security_audit.py to scripts/security/
   - Move scripts/security_audit.py (already there)
@@ -426,8 +443,11 @@
 - [ ] 8.5 Create scripts/README.md
   - Document purpose of each script
   - Provide usage examples
+
   - Document dependencies
+
   - _Requirements: 9.5_
+
 
 - [ ] 9. Archive historical artifacts
   - Move task summaries to archive
