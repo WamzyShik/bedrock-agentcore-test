@@ -291,7 +291,9 @@
   - Organize by AWS service/function
   - _Requirements: 6.1, 6.2_
 
-- [-] 5.2 Organize deployment scripts
+- [ ] 5.2 Organize deployment scripts
+
+
 
 
   - Move deployment scripts to infrastructure/aws/deployment/
