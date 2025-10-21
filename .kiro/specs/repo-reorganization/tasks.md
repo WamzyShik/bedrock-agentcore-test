@@ -316,20 +316,25 @@
   - _Requirements: 6.5, 6.6_
 
 
-- [ ] 6. Move examples and demos
+- [-] 6. Move examples and demos
+
   - Consolidate all demo files
   - Organize by feature area
   - Update demo imports
   - _Requirements: 5.1, 5.2, 5.6_
 
-- [ ] 6.1 Move basic examples
+
+- [x] 6.1 Move basic examples
+
   - Move demo_transaction_stream.py to examples/basic/
   - Move simple fraud detection demos to examples/basic/
   - Move agent_example.py to examples/basic/
   - Update imports in example files
   - _Requirements: 5.1, 5.6_
 
+
 - [ ] 6.2 Move agent examples
+
   - Move demo_agent_*.py files to examples/agents/
   - Move demo_workload_distribution.py to examples/agents/
   - Update imports
