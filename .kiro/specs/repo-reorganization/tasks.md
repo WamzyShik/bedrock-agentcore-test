@@ -365,7 +365,7 @@
 
 
 
-- [ ] 6.4 Move dashboard examples
+- [x] 6.4 Move dashboard examples
   - Move demo_*_dashboard.py to examples/dashboards/
   - Move demo_analytics*.py to examples/dashboards/
   - Move HTML demo files with their Python counterparts
@@ -373,7 +373,7 @@
   - _Requirements: 5.1, 5.4_
 
 
-- [ ] 6.5 Move stress testing examples
+- [x] 6.5 Move stress testing examples
   - Move stress_testing/demo_*.py to examples/stress_testing/
   - Keep stress_testing core functionality in src/
   - Create examples/stress_testing/README.md
@@ -381,7 +381,7 @@
 
   - _Requirements: 5.1, 5.3_
 
-- [ ] 6.6 Create examples/README.md
+- [x] 6.6 Create examples/README.md
   - Document all available examples
   - Provide usage instructions for each category
   - Include prerequisites and dependencies
