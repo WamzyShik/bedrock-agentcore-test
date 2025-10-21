@@ -520,19 +520,28 @@
 
 
 - [ ] 9. Archive historical artifacts
+
+
+
   - Move task summaries to archive
   - Move project reports to archive
   - Clean root directory
   - _Requirements: 7.1, 7.2, 7.5_
 
-- [ ] 9.1 Archive task completion summaries
+
+- [x] 9.1 Archive task completion summaries
+
+
   - Move all TASK_*.md files to .archive/task-summaries/
   - Move *_COMPLETION_SUMMARY.md files to .archive/task-summaries/
   - Move *_SUMMARY.md files to .archive/task-summaries/
   - Organize by date or task number
   - _Requirements: 7.1, 7.2_
 
-- [ ] 9.2 Archive project reports
+
+- [x] 9.2 Archive project reports
+
+
   - Move PROJECT_COMPLETION_SUMMARY.md to .archive/project-reports/
   - Move PROJECT_STATUS_REPORT.md to .archive/project-reports/
   - Move FINAL_PROJECT_SUMMARY.md to .archive/project-reports/
@@ -540,7 +549,9 @@
   - Move other status reports
   - _Requirements: 7.2_
 
-- [ ] 9.3 Create .archive/README.md
+
+- [x] 9.3 Create .archive/README.md
+
   - Explain purpose of archive
   - Document what's archived and why
   - Provide index of archived content
