@@ -11,11 +11,11 @@ from decimal import Decimal
 from typing import List, Dict, Any
 import json
 
-from src.transaction_analyzer import TransactionAnalyzer
-from src.base_agent import AgentConfiguration, AgentCapability
-from src.memory_manager import MemoryManager
-from src.context_manager import ContextManager
-from src.models import Transaction, Location, DeviceInfo
+from src.fraud_detection.agents.specialized.transaction_analyzer import TransactionAnalyzer
+from src.fraud_detection.agents.base_agent import AgentConfiguration, AgentCapability
+from src.fraud_detection.memory.memory_manager import MemoryManager
+from src.fraud_detection.memory.context_manager import ContextManager
+from src.fraud_detection.core.models import Transaction, Location, DeviceInfo
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

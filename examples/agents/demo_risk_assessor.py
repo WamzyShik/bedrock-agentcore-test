@@ -11,10 +11,10 @@ from datetime import datetime, timedelta
 from decimal import Decimal
 from typing import List, Dict, Any
 
-from src.risk_assessor import RiskAssessor
-from src.base_agent import AgentConfiguration, AgentCapability
-from src.memory_manager import MemoryManager
-from src.models import Transaction, Location, DeviceInfo, UserBehaviorProfile
+from src.fraud_detection.agents.specialized.risk_assessor import RiskAssessor
+from src.fraud_detection.agents.base_agent import AgentConfiguration, AgentCapability
+from src.fraud_detection.memory.memory_manager import MemoryManager
+from src.fraud_detection.core.models import Transaction, Location, DeviceInfo, UserBehaviorProfile
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

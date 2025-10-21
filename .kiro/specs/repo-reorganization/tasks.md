@@ -316,7 +316,9 @@
   - _Requirements: 6.5, 6.6_
 
 
-- [-] 6. Move examples and demos
+- [x] 6. Move examples and demos
+
+
 
   - Consolidate all demo files
   - Organize by feature area
@@ -333,19 +335,35 @@
   - _Requirements: 5.1, 5.6_
 
 
-- [ ] 6.2 Move agent examples
+- [x] 6.2 Move agent examples
+
+
 
   - Move demo_agent_*.py files to examples/agents/
   - Move demo_workload_distribution.py to examples/agents/
   - Update imports
   - _Requirements: 5.1, 5.2_
 
-- [ ] 6.3 Move reasoning and memory examples
+
+
+
+- [x] 6.3 Move reasoning and memory examples
+
+
+
+
   - Move demo_reasoning*.py to examples/reasoning/
   - Move demo_memory*.py to examples/memory/
   - Move demo_pattern*.py to examples/memory/
   - Update imports
   - _Requirements: 5.1, 5.2_
+
+
+
+
+
+
+
 
 - [ ] 6.4 Move dashboard examples
   - Move demo_*_dashboard.py to examples/dashboards/
@@ -354,11 +372,13 @@
   - Update imports
   - _Requirements: 5.1, 5.4_
 
+
 - [ ] 6.5 Move stress testing examples
   - Move stress_testing/demo_*.py to examples/stress_testing/
   - Keep stress_testing core functionality in src/
   - Create examples/stress_testing/README.md
   - Update imports
+
   - _Requirements: 5.1, 5.3_
 
 - [ ] 6.6 Create examples/README.md

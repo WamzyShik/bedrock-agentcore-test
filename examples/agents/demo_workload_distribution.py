@@ -10,7 +10,7 @@ import logging
 import time
 import random
 from datetime import datetime, timedelta
-from src.workload_distribution import (
+from src.fraud_detection.agents.workload_distribution import (
     WorkloadDistributor, AgentCapabilities, Task, TaskAssignment,
     TaskType, TaskPriority, AgentStatus, create_task
 )

@@ -20,12 +20,12 @@ PROJECT_ROOT = os.path.abspath(CURRENT_DIR)
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from src.compliance_agent import (
+from src.fraud_detection.agents.specialized.compliance_agent import (
     ComplianceAgent, ComplianceRegulation, AuditEventType
 )
-from src.base_agent import AgentConfiguration, AgentCapability
-from src.memory_manager import MemoryManager
-from src.models import Transaction, DecisionContext, FraudDecision, Location, DeviceInfo
+from src.fraud_detection.agents.base_agent import AgentConfiguration, AgentCapability
+from src.fraud_detection.memory.memory_manager import MemoryManager
+from src.fraud_detection.core.models import Transaction, DecisionContext, FraudDecision, Location, DeviceInfo
 
 
 def create_sample_transactions():
