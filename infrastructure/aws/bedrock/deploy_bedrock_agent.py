@@ -16,8 +16,8 @@ import boto3
 from typing import Dict, Optional
 import logging
 
-from iam_roles import IAMRoleManager
-from bedrock_agent_config import BedrockAgentConfigurator, BedrockAgentConfig, setup_fraud_detection_agent
+from infrastructure.aws.iam.iam_roles import IAMRoleManager
+from infrastructure.aws.bedrock.bedrock_agent_config import BedrockAgentConfigurator, BedrockAgentConfig, setup_fraud_detection_agent
 
 logging.basicConfig(
     level=logging.INFO,

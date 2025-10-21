@@ -16,11 +16,11 @@ import argparse
 import logging
 from typing import Dict
 
-from iam_roles import IAMRoleManager
-from data_storage_config import DataStorageConfigurator
-from streaming_config import StreamingInfrastructureConfigurator
-from monitoring_config import MonitoringConfigurator
-from deploy_bedrock_agent import BedrockAgentDeployer
+from infrastructure.aws.iam.iam_roles import IAMRoleManager
+from infrastructure.aws.config.data_storage_config import DataStorageConfigurator
+from infrastructure.aws.config.streaming_config import StreamingInfrastructureConfigurator
+from infrastructure.aws.config.monitoring_config import MonitoringConfigurator
+from infrastructure.aws.bedrock.deploy_bedrock_agent import BedrockAgentDeployer
 
 logging.basicConfig(
     level=logging.INFO,

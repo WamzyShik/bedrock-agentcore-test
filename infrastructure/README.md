@@ -61,22 +61,95 @@ python aws/bedrock/deploy_bedrock_agent.py --environment dev --region us-east-1
 
 ## Component-Specific Deployment
 
-**Data Storage:**
+### Data Storage Configuration
+
+Deploy DynamoDB tables and S3 buckets:
+
 ```bash
-python aws/config/data_storage_config.py --environment dev --region us-east-1
+cd infrastructure/aws/config
+python data_storage_config.py --environment dev --region us-east-1
 ```
 
-**Streaming Infrastructure:**
+This creates:
+- DynamoDB tables for transactions, decisions, user profiles, and fraud patterns
+- S3 buckets for audit logs, decision trails, and model artifacts
+- Encryption, lifecycle policies, and retention rules
+
+### Streaming Infrastructure Configuration
+
+Deploy Kinesis streams, Lambda functions, and EventBridge rules:
+
 ```bash
-python aws/config/streaming_config.py --environment dev --region us-east-1 --lambda-role-arn <ROLE_ARN>
+cd infrastructure/aws/config
+python streaming_config.py --environment dev --region us-east-1 --lambda-role-arn <ROLE_ARN>
 ```
 
-**Monitoring:**
+This creates:
+- Kinesis Data Streams for transaction ingestion and fraud events
+- Lambda functions for stream processing and alert handling
+- EventBridge rules for event-driven responses
+- Dead letter queues for failed processing
+
+### Monitoring Configuration
+
+Set up CloudWatch dashboards, alarms, and X-Ray tracing:
+
 ```bash
-python aws/config/monitoring_config.py --environment dev --region us-east-1
+cd infrastructure/aws/config
+python monitoring_config.py --environment dev --region us-east-1
 ```
+
+This creates:
+- CloudWatch alarms for Lambda, Kinesis, and DynamoDB
+- Custom dashboards for fraud detection metrics
+- SNS topics for alarm notifications
+- X-Ray tracing for distributed system visibility
+- Log metric filters for custom metrics
 
 ## Configuration
+
+### Configuration Directory (`aws/config/`)
+
+The `aws/config/` directory contains infrastructure configuration modules that can be used independently or as part of the full deployment:
+
+**`data_storage_config.py`**
+- Configures DynamoDB tables with encryption, streams, and TTL
+- Sets up S3 buckets with versioning, lifecycle policies, and encryption
+- Provides `DataStorageConfigurator` class for programmatic access
+- Can be run standalone or imported by deployment scripts
+
+**`streaming_config.py`**
+- Configures Kinesis Data Streams with encryption and retention
+- Sets up Lambda functions for stream processing
+- Configures EventBridge rules for event-driven architecture
+- Creates dead letter queues for error handling
+- Provides `StreamingInfrastructureConfigurator` class
+
+**`monitoring_config.py`**
+- Creates CloudWatch alarms for all infrastructure components
+- Sets up custom dashboards for fraud detection metrics
+- Configures SNS topics for alarm notifications
+- Enables X-Ray tracing for Lambda functions
+- Creates log metric filters for custom metrics
+- Provides `MonitoringConfigurator` class
+
+**Usage in Code:**
+
+```python
+from infrastructure.aws.config.data_storage_config import DataStorageConfigurator
+from infrastructure.aws.config.streaming_config import StreamingInfrastructureConfigurator
+from infrastructure.aws.config.monitoring_config import MonitoringConfigurator
+
+# Initialize configurators
+storage = DataStorageConfigurator(region_name='us-east-1', environment='dev')
+streaming = StreamingInfrastructureConfigurator(region_name='us-east-1', environment='dev')
+monitoring = MonitoringConfigurator(region_name='us-east-1', environment='dev')
+
+# Deploy components
+storage_resources = storage.setup_all_storage()
+streaming_resources = streaming.setup_all_streaming_infrastructure(lambda_role_arn)
+monitoring_resources = monitoring.setup_all_monitoring(lambda_functions, kinesis_streams, dynamodb_tables)
+```
 
 ### Agent Configuration
 
