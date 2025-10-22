@@ -2,8 +2,8 @@
 
 A comprehensive fraud detection system built on AWS Bedrock AgentCore, featuring specialized AI agents, advanced memory systems, adaptive reasoning, and real-time transaction processing.
 
-[![CI/CD Pipeline](https://github.com/your-org/bedrock-agentcore-starter-toolkit/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/your-org/bedrock-agentcore-starter-toolkit/actions)
-[![codecov](https://codecov.io/gh/your-org/bedrock-agentcore-starter-toolkit/branch/main/graph/badge.svg)](https://codecov.io/gh/your-org/bedrock-agentcore-starter-toolkit)
+[![CI/CD Pipeline](https://github.com/your-org/starjam/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/your-org/starjam/actions)
+[![codecov](https://codecov.io/gh/your-org/starjam/branch/main/graph/badge.svg)](https://codecov.io/gh/your-org/starjam)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.txt)
 
@@ -70,7 +70,7 @@ The StarJam Toolkit is an enterprise-grade fraud detection system that leverages
 ## 📁 Project Structure
 
 ```
-starjam-toolkit/
+starjam/
 ├── src/
 │   └── fraud_detection/          # Main package
 │       ├── core/                 # Core fraud detection logic
@@ -135,8 +135,8 @@ starjam-toolkit/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-org/bedrock-agentcore-starter-toolkit.git
-cd bedrock-agentcore-starter-toolkit
+git clone https://github.com/your-org/starjam.git
+cd starjam
 ```
 
 2. **Install dependencies:**
@@ -470,8 +470,8 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 
 - **Documentation**: [docs/](docs/)
 - **Examples**: [examples/](examples/)
-- **Issues**: [GitHub Issues](https://github.com/your-org/bedrock-agentcore-starter-toolkit/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-org/bedrock-agentcore-starter-toolkit/discussions)
+- **Issues**: [GitHub Issues](https://github.com/your-org/starjam/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-org/starjam/discussions)
 
 ---
 
@@ -483,7 +483,7 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 - [ ] Advanced analytics dashboard
 - [ ] Mobile app integration
 
-See the [open issues](https://github.com/your-org/bedrock-agentcore-starter-toolkit/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/your-org/starjam/issues) for a full list of proposed features and known issues.
 
 ---
 

@@ -20,7 +20,12 @@
   - Update homepage, bug tracker, and documentation URLs
   - _Requirements: 1.1, 1.2, 1.3, 2.4_
 
-- [ ] 2. Update README.md repository references
+- [x] 2. Update README.md repository references
+
+
+
+
+
   - Replace GitHub URLs in badges (CI/CD, codecov)
   - Update git clone command with new repository name
   - Update cd command in installation instructions
