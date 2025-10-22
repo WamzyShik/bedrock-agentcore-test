@@ -1,4 +1,4 @@
-# Bedrock AgentCore Starter Toolkit
+# StarJam Starter Toolkit
 
 A comprehensive fraud detection system built on AWS Bedrock AgentCore, featuring specialized AI agents, advanced memory systems, adaptive reasoning, and real-time transaction processing.
 
@@ -28,7 +28,7 @@ A comprehensive fraud detection system built on AWS Bedrock AgentCore, featuring
 
 ## 🎯 Overview
 
-The Bedrock AgentCore Starter Toolkit is an enterprise-grade fraud detection system that leverages AWS Bedrock's AI capabilities to provide:
+The StarJam Toolkit is an enterprise-grade fraud detection system that leverages AWS Bedrock's AI capabilities to provide:
 
 - **Specialized AI Agents** for transaction analysis, pattern detection, risk assessment, and compliance
 - **Advanced Memory Systems** with context-aware decision making and pattern learning
@@ -70,7 +70,7 @@ The Bedrock AgentCore Starter Toolkit is an enterprise-grade fraud detection sys
 ## 📁 Project Structure
 
 ```
-bedrock-agentcore-starter-toolkit/
+starjam-toolkit/
 ├── src/
 │   └── fraud_detection/          # Main package
 │       ├── core/                 # Core fraud detection logic
@@ -487,4 +487,4 @@ See the [open issues](https://github.com/your-org/bedrock-agentcore-starter-tool
 
 ---
 
-**Made with ❤️ by the Bedrock AgentCore Team**
+**Made with ❤️ by the StarJam Team**
