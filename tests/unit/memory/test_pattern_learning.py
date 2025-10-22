@@ -7,14 +7,14 @@ from datetime import datetime, timedelta
 from decimal import Decimal
 from unittest.mock import Mock, patch
 
-from .pattern_learning import (
+from src.fraud_detection.memory.pattern_learning import (
     PatternLearningEngine, PatternMetrics, LearningFeedback
 )
-from .models import (
+from src.fraud_detection.memory.models import (
     Transaction, FraudPattern, FraudDecision, DecisionContext,
     Location, DeviceInfo, RiskLevel
 )
-from .memory_manager import MemoryManager
+from src.fraud_detection.memory.memory_manager import MemoryManager
 
 
 @pytest.fixture

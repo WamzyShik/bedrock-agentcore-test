@@ -8,7 +8,7 @@ from decimal import Decimal
 from unittest.mock import Mock, MagicMock
 
 from src.fraud_detection.memory.context_manager import ContextManager, ContextualInsight
-from src.fraud_detection.core.models import (
+from src.fraud_detection.memory.models import (
     Transaction, DecisionContext, UserBehaviorProfile, 
     FraudPattern, SimilarCase, RiskProfile, FraudDecision,
     Location, DeviceInfo, RiskLevel

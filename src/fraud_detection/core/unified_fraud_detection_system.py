@@ -439,7 +439,7 @@ class UnifiedFraudDetectionSystem:
     def _store_decision_context(self, transaction, result: Dict[str, Any]):
         """Store decision context in memory system."""
         try:
-            from src.fraud_detection.core.models import DecisionContext, FraudDecision as MemoryFraudDecision
+            from src.fraud_detection.memory.models import DecisionContext, FraudDecision as MemoryFraudDecision
             
             # Map decision to enum
             decision_map = {

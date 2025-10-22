@@ -14,8 +14,8 @@ from decimal import Decimal
 # Add the project root to the path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from src.memory_manager import MemoryManager
-from src.models import (
+from src.fraud_detection.memory.memory_manager import MemoryManager
+from src.fraud_detection.memory.models import (
     Transaction, DecisionContext, UserBehaviorProfile, FraudPattern,
     RiskProfile, Location, DeviceInfo, FraudDecision, RiskLevel
 )
