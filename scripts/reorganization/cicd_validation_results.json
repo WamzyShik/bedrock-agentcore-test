@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "workflow_file": ".github\\workflows\\ci-cd.yml",
+  "paths": {
+    "paths_checked": 8,
+    "paths_valid": 8,
+    "paths_missing": [],
+    "errors": []
+  },
+  "tests": {
+    "test_jobs": [
+      "unit_tests",
+      "lint",
+      "security"
+    ],
+    "valid": true,
+    "errors": []
+  },
+  "deployments": {
+    "deployment_jobs": [
+      "deploy-dev",
+      "deploy-staging",
+      "deploy-prod"
+    ],
+    "valid": true,
+    "errors": []
+  },
+  "requirements": {
+    "exists": true,
+    "valid": true,
+    "package_count": 0,
+    "file_type": "pyproject.toml",
+    "errors": []
+  },
+  "errors": []
+}

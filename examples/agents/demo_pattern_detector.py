@@ -11,11 +11,11 @@ from decimal import Decimal
 from typing import List, Dict, Any
 import json
 
-from src.fraud_detection.agents.specialized.pattern_detector import PatternDetector
-from src.fraud_detection.agents.base_agent import AgentConfiguration, AgentCapability
-from src.fraud_detection.memory.memory_manager import MemoryManager
-from src.fraud_detection.memory.pattern_learning import PatternLearningEngine
-from src.fraud_detection.core.models import Transaction, Location, DeviceInfo, FraudPattern
+from fraud_detection.agents.specialized.specialized_agents.pattern_detector import PatternDetector
+from fraud_detection.agents.specialized.specialized_agents.base_agent import AgentConfiguration, AgentCapability
+from fraud_detection.memory.memory_manager import MemoryManager
+from fraud_detection.memory.pattern_learning import PatternLearningEngine
+from fraud_detection.memory.models import Transaction, Location, DeviceInfo, FraudPattern
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -517,8 +517,6 @@ def main():
                 
                 # Create realistic transaction history
                 for i in range(min(20, limit)):
-from src.fraud_detection.core.models import Transaction, Location, DeviceInfo
-                    
                     tx = Transaction(
                         id=f"mock_tx_{i:03d}",
                         user_id=user_id,

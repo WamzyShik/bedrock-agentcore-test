@@ -12,9 +12,9 @@
       "success": true,
       "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\agents\\__init__.py"
     },
-    "fraud_detection.agents.base_agent": {
-      "success": false,
-      "error": "No module named 'fraud_detection.agents.base_agent'"
+    "fraud_detection.agents.specialized.specialized_agents.base_agent": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\agents\\specialized\\specialized_agents\\base_agent.py"
     },
     "fraud_detection.agents.coordination": {
       "success": true,
@@ -49,12 +49,12 @@
       "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\reasoning\\adaptive_reasoning.py"
     },
     "fraud_detection.streaming": {
-      "success": false,
-      "error": "No module named 'src'"
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\streaming\\__init__.py"
     },
     "fraud_detection.external": {
-      "success": false,
-      "error": "No module named 'src'"
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\external\\__init__.py"
     },
     "fraud_detection.web": {
       "success": true,
@@ -68,9 +68,8 @@
       "success": true,
       "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\web\\api\\__init__.py"
     },
-    "fraud_detection.agents.base_agent.BaseAgent": {
-      "success": false,
-      "error": "No module named 'fraud_detection.agents.base_agent'"
+    "fraud_detection.agents.specialized.specialized_agents.base_agent.BaseAgent": {
+      "success": true
     },
     "fraud_detection.memory.memory_manager.MemoryManager": {
       "success": true
@@ -121,6 +120,62 @@
         "ValidationCriteria"
       ]
     },
+    "fraud_detection.agents": {
+      "__all__": [
+        "BaseAgent"
+      ]
+    },
+    "fraud_detection.streaming": {
+      "__all__": [
+        "TransactionStreamProcessor",
+        "StreamingFraudDetector",
+        "Transaction",
+        "ProcessingResult",
+        "ProcessingPriority",
+        "StreamStatus",
+        "EventResponseSystem",
+        "FraudEvent",
+        "ResponseRule",
+        "ResponseExecution",
+        "EventType",
+        "EventSeverity",
+        "ResponseAction",
+        "ScalableEventProcessor",
+        "EventBatch",
+        "ProcessingMetrics",
+        "ScalingDecision",
+        "ProcessingMode",
+        "ScalingStrategy"
+      ]
+    },
+    "fraud_detection.external": {
+      "__all__": [
+        "ToolIntegrator",
+        "ToolConfiguration",
+        "ToolType",
+        "ToolStatus",
+        "IdentityVerificationTool",
+        "IdentityData",
+        "VerificationResult",
+        "IdentityVerificationResult",
+        "DocumentType",
+        "FraudDatabaseTool",
+        "FraudCase",
+        "SimilarCase",
+        "FraudPattern",
+        "PatternMatch",
+        "FraudType",
+        "FraudCaseStatus",
+        "SimilarityMetric",
+        "GeolocationTool",
+        "GeographicLocation",
+        "LocationRiskAssessment",
+        "TravelAnalysis",
+        "LocationRiskLevel",
+        "LocationVerificationStatus",
+        "TravelPattern"
+      ]
+    },
     "fraud_detection.web": {
       "__all__": [
         "dashboards",
@@ -146,11 +201,7 @@
       ]
     }
   },
-  "errors": [
-    "Failed to import fraud_detection.agents.base_agent: No module named 'fraud_detection.agents.base_agent'",
-    "Failed to import fraud_detection.streaming: No module named 'src'",
-    "Failed to import fraud_detection.external: No module named 'src'"
-  ],
+  "errors": [],
   "package_structure": {
     "exists": true,
     "init_files_count": 14,

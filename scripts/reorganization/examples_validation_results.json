@@ -1,0 +1,313 @@
+{
+  "total_files": 20,
+  "syntax_valid": 20,
+  "syntax_errors": 0,
+  "files": [
+    {
+      "file": "examples\\agents\\demo_agent_communication.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "sys",
+        "os",
+        "time",
+        "threading",
+        "datetime",
+        "src.fraud_detection.agents.communication_protocol",
+        "traceback"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\agents\\demo_compliance_agent.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "decimal",
+        "fraud_detection.agents.specialized.specialized_agents.compliance_agent",
+        "fraud_detection.agents.specialized.specialized_agents.base_agent",
+        "fraud_detection.memory.memory_manager",
+        "fraud_detection.memory.models",
+        "traceback"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\agents\\demo_pattern_detector.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "datetime",
+        "decimal",
+        "typing",
+        "json",
+        "fraud_detection.agents.specialized.specialized_agents.pattern_detector",
+        "fraud_detection.agents.specialized.specialized_agents.base_agent",
+        "fraud_detection.memory.memory_manager",
+        "fraud_detection.memory.pattern_learning",
+        "fraud_detection.memory.models"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\agents\\demo_risk_assessor.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "datetime",
+        "decimal",
+        "typing",
+        "fraud_detection.agents.specialized.specialized_agents.risk_assessor",
+        "fraud_detection.agents.specialized.specialized_agents.base_agent",
+        "fraud_detection.memory.memory_manager",
+        "fraud_detection.memory.models"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\agents\\demo_transaction_analyzer.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "datetime",
+        "decimal",
+        "typing",
+        "json",
+        "fraud_detection.agents.specialized.specialized_agents.transaction_analyzer",
+        "fraud_detection.agents.specialized.specialized_agents.base_agent",
+        "fraud_detection.memory.memory_manager",
+        "fraud_detection.memory.context_manager",
+        "fraud_detection.memory.models"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\agents\\demo_workload_distribution.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "time",
+        "random",
+        "datetime",
+        "src.fraud_detection.agents.workload_distribution"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\basic\\agent_example.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "os",
+        "dotenv",
+        "bedrock_agentcore",
+        "strands"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\basic\\demo_transaction_stream.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "time",
+        "random",
+        "datetime",
+        "fraud_detection.streaming.transaction_stream_processor"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\basic\\standalone_fraud_api.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "os",
+        "json",
+        "logging",
+        "datetime",
+        "typing",
+        "flask",
+        "flask_cors",
+        "flask_socketio",
+        "threading",
+        "time",
+        "scripts.utilities.currency_converter",
+        "scripts.utilities.transaction_generator",
+        "scripts.utilities.data_loader"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\dashboards\\demo_admin_interface.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "sys",
+        "os",
+        "src.admin_interface_api",
+        "traceback"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\dashboards\\demo_analytics_dashboard.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "sys",
+        "os",
+        "src.analytics_dashboard_api",
+        "traceback"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\dashboards\\demo_decision_aggregation.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "datetime",
+        "src.decision_aggregation"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\dashboards\\demo_decision_explanation_interface.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "src.decision_explanation_interface"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\memory\\demo_context_aware_decisions.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "datetime",
+        "decimal",
+        "typing",
+        "src.context_manager",
+        "src.memory_manager",
+        "src.models"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\memory\\demo_memory_manager.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "sys",
+        "os",
+        "datetime",
+        "decimal",
+        "src.memory_manager",
+        "src.models",
+        "traceback"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\memory\\demo_pattern_learning.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "logging",
+        "datetime",
+        "decimal",
+        "typing",
+        "src.pattern_learning",
+        "src.memory_manager",
+        "src.models"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\reasoning\\demo_adaptive_reasoning.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "typing",
+        "adaptive_reasoning",
+        "adaptive_reasoning",
+        "adaptive_reasoning",
+        "adaptive_reasoning",
+        "adaptive_integration",
+        "adaptive_reasoning",
+        "adaptive_integration",
+        "adaptive_reasoning"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\reasoning\\demo_audit_trail.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "datetime",
+        "src.audit_trail"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\reasoning\\demo_explanation_system.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "explanation_generator",
+        "reasoning_trail",
+        "explanation_generator",
+        "explanation_validator",
+        "explanation_generator",
+        "reasoning_trail",
+        "explanation_validator",
+        "reasoning_trail",
+        "explanation_generator",
+        "explanation_validator"
+      ],
+      "errors": []
+    },
+    {
+      "file": "examples\\reasoning\\demo_reasoning.py",
+      "syntax_valid": true,
+      "imports_valid": true,
+      "imports": [
+        "json",
+        "sys",
+        "os",
+        "datetime",
+        "chain_of_thought",
+        "confidence_scoring",
+        "step_tracker",
+        "chain_of_thought",
+        "confidence_scoring",
+        "test_reasoning"
+      ],
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "success": true
+}

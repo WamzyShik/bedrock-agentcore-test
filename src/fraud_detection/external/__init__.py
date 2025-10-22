@@ -1,19 +1,19 @@
 """External tool integrations."""
 
-from src.fraud_detection.external.tool_integrator import (
+from fraud_detection.external.tool_integrator import (
     ToolIntegrator,
     ToolConfiguration,
     ToolType,
     ToolStatus
 )
-from src.fraud_detection.external.identity_verification import (
+from fraud_detection.external.identity_verification import (
     IdentityVerificationTool,
     IdentityData,
     VerificationResult,
     IdentityVerificationResult,
     DocumentType
 )
-from src.fraud_detection.external.fraud_database import (
+from fraud_detection.external.fraud_database import (
     FraudDatabaseTool,
     FraudCase,
     SimilarCase,
@@ -23,7 +23,7 @@ from src.fraud_detection.external.fraud_database import (
     FraudCaseStatus,
     SimilarityMetric
 )
-from src.fraud_detection.external.geolocation_services import (
+from fraud_detection.external.geolocation_services import (
     GeolocationTool,
     GeographicLocation,
     LocationRiskAssessment,

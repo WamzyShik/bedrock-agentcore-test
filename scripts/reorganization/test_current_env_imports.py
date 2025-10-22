@@ -34,7 +34,7 @@ def test_imports():
         "fraud_detection",
         "fraud_detection.core",
         "fraud_detection.agents",
-        "fraud_detection.agents.base_agent",
+        "fraud_detection.agents.specialized.specialized_agents.base_agent",
         "fraud_detection.agents.coordination",
         "fraud_detection.agents.specialized",
         "fraud_detection.agents.bedrock",
@@ -82,7 +82,7 @@ def test_imports():
     
     # Test specific important classes
     specific_imports = [
-        ("fraud_detection.agents.base_agent", "BaseAgent"),
+        ("fraud_detection.agents.specialized.specialized_agents.base_agent", "BaseAgent"),
         ("fraud_detection.memory.memory_manager", "MemoryManager"),
         ("fraud_detection.memory.context_manager", "ContextManager"),
     ]

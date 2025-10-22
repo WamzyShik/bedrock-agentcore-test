@@ -1,6 +1,6 @@
 """Real-time streaming and event processing."""
 
-from src.fraud_detection.streaming.transaction_stream_processor import (
+from fraud_detection.streaming.transaction_stream_processor import (
     TransactionStreamProcessor,
     StreamingFraudDetector,
     Transaction,
@@ -8,7 +8,7 @@ from src.fraud_detection.streaming.transaction_stream_processor import (
     ProcessingPriority,
     StreamStatus
 )
-from src.fraud_detection.streaming.event_response_system import (
+from fraud_detection.streaming.event_response_system import (
     EventResponseSystem,
     FraudEvent,
     ResponseRule,
@@ -17,7 +17,7 @@ from src.fraud_detection.streaming.event_response_system import (
     EventSeverity,
     ResponseAction
 )
-from src.fraud_detection.streaming.scalable_event_processor import (
+from fraud_detection.streaming.scalable_event_processor import (
     ScalableEventProcessor,
     EventBatch,
     ProcessingMetrics,

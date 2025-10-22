@@ -14,9 +14,9 @@ import statistics
 import re
 
 from .base_agent import BaseAgent, AgentConfiguration, AgentCapability, ProcessingResult
-from src.fraud_detection.memory.models import Transaction, Location, DeviceInfo, FraudDecision
-from src.fraud_detection.memory.memory_manager import MemoryManager
-from src.fraud_detection.memory.context_manager import ContextManager
+from fraud_detection.memory.models import Transaction, Location, DeviceInfo, FraudDecision
+from fraud_detection.memory.memory_manager import MemoryManager
+from fraud_detection.memory.context_manager import ContextManager
 
 logger = logging.getLogger(__name__)
 

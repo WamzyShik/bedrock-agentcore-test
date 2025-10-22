@@ -15,9 +15,9 @@ from collections import defaultdict
 import math
 
 from .base_agent import BaseAgent, AgentConfiguration, AgentCapability, ProcessingResult
-from src.models import Transaction, DecisionContext, UserBehaviorProfile, FraudDecision
-from src.memory_manager import MemoryManager
-from src.pattern_learning import PatternLearningEngine
+from fraud_detection.memory.models import Transaction, DecisionContext, UserBehaviorProfile, FraudDecision, Location, DeviceInfo
+from fraud_detection.memory.memory_manager import MemoryManager
+from fraud_detection.memory.pattern_learning import PatternLearningEngine
 
 logger = logging.getLogger(__name__)
 
@@ -214,8 +214,6 @@ class PatternDetector(BaseAgent):
                 tx_data = request_data
             
             # For demo purposes, create a simplified transaction
-from src.models import Location, DeviceInfo
-            
             location = Location(
                 country=tx_data.get("location", {}).get("country", ""),
                 city=tx_data.get("location", {}).get("city", "")

@@ -15,8 +15,8 @@ from collections import defaultdict
 import statistics
 
 from .base_agent import BaseAgent, AgentConfiguration, AgentCapability, ProcessingResult
-from src.models import Transaction, RiskProfile, RiskLevel, Location, DecisionContext
-from src.memory_manager import MemoryManager
+from fraud_detection.memory.models import Transaction, RiskProfile, RiskLevel, Location, DecisionContext, DeviceInfo
+from fraud_detection.memory.memory_manager import MemoryManager
 
 logger = logging.getLogger(__name__)
 
@@ -243,8 +243,6 @@ class RiskAssessor(BaseAgent):
                 tx_data = request_data
             
             # Create transaction object (simplified for demo)
-from src.models import Location, DeviceInfo
-            
             location = Location(
                 country=tx_data.get("location", {}).get("country", ""),
                 city=tx_data.get("location", {}).get("city", ""),

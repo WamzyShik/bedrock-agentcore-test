@@ -25,9 +25,9 @@ PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from base_agent import BaseAgent, AgentConfiguration, AgentCapability, ProcessingResult
-from src.models import Transaction, DecisionContext, FraudDecision
-from src.memory_manager import MemoryManager
+from .base_agent import BaseAgent, AgentConfiguration, AgentCapability, ProcessingResult
+from fraud_detection.memory.models import Transaction, DecisionContext, FraudDecision
+from fraud_detection.memory.memory_manager import MemoryManager
 
 # Mark imported models as intentionally used (prevents unused-import warnings)
 _ = (Transaction, DecisionContext, FraudDecision)
