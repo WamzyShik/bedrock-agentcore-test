@@ -43,7 +43,12 @@
   - Update function documentation to reference "starjam"
   - _Requirements: 4.3, 3.3_
 
-- [ ] 4. Update template requirement files
+- [x] 4. Update template requirement files
+
+
+
+
+
   - Update src/bedrock_agentcore_starter_toolkit/services/import_agent/assets/requirements_langchain.j2
   - Update src/bedrock_agentcore_starter_toolkit/services/import_agent/assets/requirements_strands.j2
   - Replace package name references with "starjam"
