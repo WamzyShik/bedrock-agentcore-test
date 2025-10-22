@@ -83,4 +83,4 @@ jobs:
           AGENTCORE_TEST_ROLE: AgentExecutionRole
         id: tests
         run: |
-          pytest tests_integ/cli -s --log-cli-level=INFO
+          pytest tests/integration/cli -s --log-cli-level=INFO

@@ -69,7 +69,7 @@ Homepage = "https://github.com/aws/bedrock-agentcore-starter-toolkit"
 Documentation = "https://github.com/aws/bedrock-agentcore-starter-toolkit"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/bedrock_agentcore_starter_toolkit"]
+packages = ["src/bedrock_agentcore_starter_toolkit", "src/fraud_detection"]
 
 [tool.mypy]
 python_version = "3.10"
@@ -89,7 +89,7 @@ ignore_missing_imports = false
 
 [tool.ruff]
 line-length = 120
-include = ["examples/**/*.py", "src/**/*.py", "tests/**/*.py"]
+include = ["examples/**/*.py", "src/**/*.py", "tests/**/*.py", "scripts/**/*.py", "infrastructure/**/*.py"]
 
 [tool.ruff.lint]
 select = [
