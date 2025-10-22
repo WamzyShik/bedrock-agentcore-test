@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "bedrock-agentcore-starter-toolkit"
+name = "starjam"
 version = "0.1.12"
 description = "A starter toolkit for using Bedrock AgentCore"
 readme = "README.md"
@@ -64,9 +64,9 @@ agentcore = "bedrock_agentcore_starter_toolkit.cli.cli:main"
 allow-direct-references = true
 
 [project.urls]
-Homepage = "https://github.com/aws/bedrock-agentcore-starter-toolkit"
-"Bug Tracker" = "https://github.com/aws/bedrock-agentcore-starter-toolkit/issues"
-Documentation = "https://github.com/aws/bedrock-agentcore-starter-toolkit"
+Homepage = "https://github.com/aws/starjam"
+"Bug Tracker" = "https://github.com/aws/starjam/issues"
+Documentation = "https://github.com/aws/starjam"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/bedrock_agentcore_starter_toolkit", "src/fraud_detection"]

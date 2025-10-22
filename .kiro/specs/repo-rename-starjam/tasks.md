@@ -1,6 +1,20 @@
 # Implementation Plan
 
-- [ ] 1. Update package configuration in pyproject.toml
+- [x] 1. Update package configuration in pyproject.toml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - Change package name from "bedrock-agentcore-starter-toolkit" to "starjam"
   - Update all project URLs to reference the new repository name
   - Update homepage, bug tracker, and documentation URLs
