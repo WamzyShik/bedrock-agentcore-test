@@ -519,7 +519,12 @@
   - _Requirements: 9.5_
 
 
-- [ ] 9. Archive historical artifacts
+- [x] 9. Archive historical artifacts
+
+
+
+
+
 
 
 
