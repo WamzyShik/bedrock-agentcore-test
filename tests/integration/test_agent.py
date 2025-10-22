@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Simple test script for the agent"""
 
-from agent_example import agent_invocation
+from tests.integration.strands_agent.agent_example import agent_invocation
 
 def test_prompts():
     """Test various prompts with the agent"""

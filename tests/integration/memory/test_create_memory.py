@@ -30,4 +30,12 @@ def create_memory():
     return memory.get("id")
 
 
-app.run()
+def test_create_memory():
+    """Test memory creation."""
+    memory_id = create_memory()
+    assert memory_id is not None
+
+
+if __name__ == "__main__":
+    # Only run the app when executed directly, not during test discovery
+    app.run()

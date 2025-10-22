@@ -285,9 +285,9 @@ def test_similarity_calculation():
 
 def test_dynamodb_config():
     """Test DynamoDB configuration."""
-    print("Testing DynamoDB configuration...")
+    from src.fraud_detection.memory.dynamodb_config import DynamoDBConfig
     
-from src.dynamodb_config import DynamoDBConfig
+    print("Testing DynamoDB configuration...")
     
     config = DynamoDBConfig(endpoint_url='http://localhost:8000')
     assert config is not None

@@ -7,13 +7,13 @@ from datetime import datetime, timedelta
 from decimal import Decimal
 from unittest.mock import Mock, MagicMock
 
-from .context_manager import ContextManager, ContextualInsight
-from .models import (
+from src.fraud_detection.memory.context_manager import ContextManager, ContextualInsight
+from src.fraud_detection.core.models import (
     Transaction, DecisionContext, UserBehaviorProfile, 
     FraudPattern, SimilarCase, RiskProfile, FraudDecision,
     Location, DeviceInfo, RiskLevel
 )
-from .memory_manager import MemoryManager
+from src.fraud_detection.memory.memory_manager import MemoryManager
 
 
 @pytest.fixture
