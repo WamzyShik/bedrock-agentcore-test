@@ -1,9 +1,10 @@
-# Repository Reorganization Migration Guide
+# Repository Migration Guide
 
-This document provides a comprehensive guide for migrating to the new repository structure. The reorganization improves code organization, maintainability, and follows Python best practices.
+This document provides a comprehensive guide for migrating to the new repository structure and name. The repository has been renamed from "bedrock-agentcore-starter-toolkit" to "StarJam" and reorganized to improve code organization, maintainability, and follow Python best practices.
 
 ## Table of Contents
 
+- [Repository Rename](#repository-rename)
 - [Overview](#overview)
 - [What Changed](#what-changed)
 - [File Movement Map](#file-movement-map)
@@ -11,6 +12,107 @@ This document provides a comprehensive guide for migrating to the new repository
 - [Configuration Changes](#configuration-changes)
 - [Developer Checklist](#developer-checklist)
 - [Troubleshooting](#troubleshooting)
+
+---
+
+## Repository Rename
+
+### Overview
+
+The repository has been renamed from `bedrock-agentcore-starter-toolkit` to `starjam` to better reflect the project's identity and simplify references throughout the codebase.
+
+### What Changed
+
+- **Repository Name:** `bedrock-agentcore-starter-toolkit` → `starjam`
+- **Package Name:** `bedrock-agentcore-starter-toolkit` → `starjam`
+- **GitHub URLs:** All references updated to new repository name
+- **Documentation:** All references updated to use "StarJam" branding
+
+### Migration Steps for Existing Users
+
+#### 1. Update Your Git Remote
+
+If you have an existing clone of the repository, update your remote URL:
+
+```bash
+git remote set-url origin https://github.com/your-org/starjam.git
+```
+
+Verify the change:
+```bash
+git remote -v
+```
+
+#### 2. Rename Your Local Directory (Optional)
+
+For consistency, you may want to rename your local directory:
+
+```bash
+cd ..
+mv bedrock-agentcore-starter-toolkit starjam
+cd starjam
+```
+
+#### 3. Update Package Installation
+
+Uninstall the old package and reinstall with the new name:
+
+```bash
+pip uninstall bedrock-agentcore-starter-toolkit
+pip install -e .
+```
+
+#### 4. Update Your Dependencies
+
+If you have the package listed in `requirements.txt` or `pyproject.toml`:
+
+**requirements.txt:**
+```txt
+# Old
+bedrock-agentcore-starter-toolkit
+
+# New
+starjam
+```
+
+**pyproject.toml:**
+```toml
+# Old
+dependencies = ["bedrock-agentcore-starter-toolkit"]
+
+# New
+dependencies = ["starjam"]
+```
+
+#### 5. Update CI/CD and Deployment Scripts
+
+Update any scripts or configurations that reference the old repository name:
+
+```bash
+# Old
+REPO_NAME="bedrock-agentcore-starter-toolkit"
+git clone https://github.com/your-org/bedrock-agentcore-starter-toolkit.git
+
+# New
+REPO_NAME="starjam"
+git clone https://github.com/your-org/starjam.git
+```
+
+#### 6. Update Documentation References
+
+Update any internal documentation, wikis, or notes that reference the old name.
+
+### Breaking Changes
+
+- The package name has changed, requiring updates to import statements in external projects
+- GitHub URLs have changed, requiring updates to git remotes and CI/CD configurations
+- Any hardcoded references to the old name will need to be updated
+
+### Backward Compatibility
+
+- Git history is fully preserved
+- All functionality remains the same
+- Only naming and references have changed
 
 ---
 
@@ -61,7 +163,7 @@ bedrock-agentcore-starter-toolkit/
 
 **After:**
 ```
-bedrock-agentcore-starter-toolkit/
+starjam/
 ├── src/
 │   └── fraud_detection/
 │       ├── core/
@@ -254,7 +356,7 @@ The package configuration has been updated:
 
 ```toml
 [project]
-name = "bedrock-agentcore-starter-toolkit"
+name = "starjam"
 version = "0.1.12"
 
 [tool.hatch.build.targets.wheel]

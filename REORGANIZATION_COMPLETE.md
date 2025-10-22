@@ -1,6 +1,6 @@
 # 🎉 Repository Reorganization - COMPLETE
 
-**Project:** Bedrock AgentCore Starter Toolkit Repository Reorganization  
+**Project:** StarJam Repository Reorganization  
 **Status:** ✅ COMPLETE  
 **Completion Date:** October 22, 2025
 
@@ -156,7 +156,7 @@ The comprehensive repository reorganization has been successfully completed. The
 ## 📁 New Structure
 
 ```
-bedrock-agentcore-starter-toolkit/
+starjam/
 ├── src/fraud_detection/          # Main package
 ├── tests/                         # All tests
 ├── infrastructure/                # AWS infrastructure
