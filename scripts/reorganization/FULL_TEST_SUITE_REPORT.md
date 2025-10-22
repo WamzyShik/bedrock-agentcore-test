@@ -160,6 +160,16 @@ The reorganization has successfully:
 - ✓ Maintained test discoverability (602 tests found)
 - ✓ Preserved test file structure and organization
 
-However, some import paths need updating to reflect the new structure. This is expected and documented in the reorganization plan. Once the 5 high/medium priority files are updated, the test suite should run successfully.
+However, **10 import errors were discovered that must be fixed**. These errors are a direct result of the reorganization and represent broken functionality that needs to be repaired.
 
-**Next Steps:** Proceed to fix the identified import issues, then re-run the full test suite to verify all tests pass.
+## ⚠️ CRITICAL: These Errors Must Be Fixed
+
+The import errors are **not optional** - they represent broken tests and imports that resulted from the reorganization. The reorganization cannot be considered complete until these errors are resolved.
+
+### Required Fixes (Priority Order)
+
+1. **HIGH PRIORITY:** Fix `src/fraud_detection/core/unified_fraud_detection_system.py` (blocks 3 tests)
+2. **MEDIUM PRIORITY:** Fix 4 test files with import/syntax issues
+3. **LOW PRIORITY:** Install optional dependencies or skip those tests
+
+**Next Steps:** These import issues **must be fixed immediately** as part of completing the reorganization, then re-run the full test suite to verify all tests pass.
