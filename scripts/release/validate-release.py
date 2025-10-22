@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Pre-release validation script for BedrockAgentCore Starter Toolkit.
+Pre-release validation script for StarJam.
 Configured for staging repository.
 """
 
@@ -140,8 +140,8 @@ def validate_package_contents(wheel_path: Path):
 
         # Check for required files
         required_patterns = [
-            "bedrock_agentcore_starter_toolkit/__init__.py",
-            "bedrock_agentcore_starter_toolkit/cli/cli.py",
+            "starjam/__init__.py",
+            "starjam/cli/cli.py",
             "*.dist-info/METADATA",
             "*.dist-info/WHEEL",
         ]
@@ -161,8 +161,8 @@ def validate_package_contents(wheel_path: Path):
 
 def main():
     """Run all validation checks."""
-    print(f"{Colors.BOLD}=== BedrockAgentCore Starter Toolkit - Release Validation ==={Colors.RESET}")
-    print("Repository: bedrock-agentcore-starter-toolkit-staging")
+    print(f"{Colors.BOLD}=== StarJam - Release Validation ==={Colors.RESET}")
+    print("Repository: starjam-staging")
 
     # Check we're in the right directory
     if not Path("pyproject.toml").exists():

@@ -115,7 +115,7 @@ def test_package_installation():
             "fraud_detection.streaming",
             "fraud_detection.external",
             "fraud_detection.web",
-            "bedrock_agentcore_starter_toolkit",
+            "starjam",
         ]
         
         for module in test_imports:
@@ -170,7 +170,7 @@ def test_package_installation():
         print("-" * 80)
         
         # Check package is installed
-        result = run_command([str(pip_exe), "show", "bedrock-agentcore-starter-toolkit"])
+        result = run_command([str(pip_exe), "show", "starjam"])
         if result.returncode == 0:
             print("✅ Package metadata found:")
             print(result.stdout)

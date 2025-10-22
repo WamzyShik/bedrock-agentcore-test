@@ -12,7 +12,7 @@ fi
 
 GITHUB_TOKEN=$1
 REPO_OWNER="aws"
-REPO_NAME="bedrock-agentcore-starter-toolkit-staging"
+REPO_NAME="starjam-staging"
 API_URL="https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/branches"
 
 # Read the branch protection configuration

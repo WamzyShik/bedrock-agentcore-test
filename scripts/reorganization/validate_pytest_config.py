@@ -70,7 +70,7 @@ def validate_coverage_config(config):
     print(f"✓ Coverage source paths: {source_paths}")
     
     expected_sources = [
-        "src/bedrock_agentcore_starter_toolkit",
+        "src/starjam",
         "src/fraud_detection"
     ]
     
