@@ -1,0 +1,218 @@
+{
+  "import_tests": {
+    "fraud_detection": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\__init__.py"
+    },
+    "fraud_detection.core": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\core\\__init__.py"
+    },
+    "fraud_detection.agents": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\agents\\__init__.py"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.base_agent": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\agents\\specialized\\specialized_agents\\base_agent.py"
+    },
+    "fraud_detection.agents.coordination": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\agents\\coordination\\__init__.py"
+    },
+    "fraud_detection.agents.specialized": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\agents\\specialized\\__init__.py"
+    },
+    "fraud_detection.agents.bedrock": {
+      "success": true,
+      "path": "None"
+    },
+    "fraud_detection.memory": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\memory\\__init__.py"
+    },
+    "fraud_detection.memory.memory_manager": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\memory\\memory_manager.py"
+    },
+    "fraud_detection.memory.context_manager": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\memory\\context_manager.py"
+    },
+    "fraud_detection.reasoning": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\reasoning\\__init__.py"
+    },
+    "fraud_detection.reasoning.adaptive_reasoning": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\reasoning\\adaptive_reasoning.py"
+    },
+    "fraud_detection.streaming": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\streaming\\__init__.py"
+    },
+    "fraud_detection.external": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\external\\__init__.py"
+    },
+    "fraud_detection.web": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\web\\__init__.py"
+    },
+    "fraud_detection.web.dashboards": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\web\\dashboards\\__init__.py"
+    },
+    "fraud_detection.web.api": {
+      "success": true,
+      "path": "C:\\Users\\JAMES\\bedrock-agentcore-starter-toolkit\\src\\fraud_detection\\web\\api\\__init__.py"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.base_agent.BaseAgent": {
+      "success": true
+    },
+    "fraud_detection.memory.memory_manager.MemoryManager": {
+      "success": true
+    },
+    "fraud_detection.memory.context_manager.ContextManager": {
+      "success": true
+    }
+  },
+  "module_attributes": {
+    "fraud_detection": {
+      "__all__": [
+        "__version__",
+        "__author__",
+        "FraudDetectionAgent",
+        "UnifiedFraudDetectionSystem",
+        "SystemConfiguration",
+        "TransactionProcessingPipeline",
+        "TransactionPreprocessor",
+        "FraudDetectionClient",
+        "Transaction",
+        "FraudCriteria",
+        "ValidationStatus",
+        "ValidationResult",
+        "ProcessingResult",
+        "MemoryManager",
+        "ContextManager",
+        "PatternLearningEngine",
+        "ContextualInsight",
+        "PatternMetrics",
+        "LearningFeedback",
+        "FraudDecision",
+        "RiskLevel",
+        "DecisionContext",
+        "UserBehaviorProfile",
+        "FraudPattern",
+        "RiskProfile",
+        "ExplanationGenerator",
+        "DecisionExplanationInterface",
+        "ConfidenceScorer",
+        "ExplanationValidator",
+        "ReasoningTrailFormatter",
+        "ExplanationStyle",
+        "ExplanationLevel",
+        "ExplanationReport",
+        "DecisionExplanation",
+        "ConfidenceAssessment",
+        "ReasoningTrail",
+        "ValidationCriteria"
+      ]
+    },
+    "fraud_detection.agents": {
+      "__all__": [
+        "BaseAgent"
+      ]
+    },
+    "fraud_detection.streaming": {
+      "__all__": [
+        "TransactionStreamProcessor",
+        "StreamingFraudDetector",
+        "Transaction",
+        "ProcessingResult",
+        "ProcessingPriority",
+        "StreamStatus",
+        "EventResponseSystem",
+        "FraudEvent",
+        "ResponseRule",
+        "ResponseExecution",
+        "EventType",
+        "EventSeverity",
+        "ResponseAction",
+        "ScalableEventProcessor",
+        "EventBatch",
+        "ProcessingMetrics",
+        "ScalingDecision",
+        "ProcessingMode",
+        "ScalingStrategy"
+      ]
+    },
+    "fraud_detection.external": {
+      "__all__": [
+        "ToolIntegrator",
+        "ToolConfiguration",
+        "ToolType",
+        "ToolStatus",
+        "IdentityVerificationTool",
+        "IdentityData",
+        "VerificationResult",
+        "IdentityVerificationResult",
+        "DocumentType",
+        "FraudDatabaseTool",
+        "FraudCase",
+        "SimilarCase",
+        "FraudPattern",
+        "PatternMatch",
+        "FraudType",
+        "FraudCaseStatus",
+        "SimilarityMetric",
+        "GeolocationTool",
+        "GeographicLocation",
+        "LocationRiskAssessment",
+        "TravelAnalysis",
+        "LocationRiskLevel",
+        "LocationVerificationStatus",
+        "TravelPattern"
+      ]
+    },
+    "fraud_detection.web": {
+      "__all__": [
+        "dashboards",
+        "api"
+      ]
+    },
+    "fraud_detection.web.dashboards": {
+      "__all__": [
+        "admin_dashboard",
+        "agent_dashboard",
+        "analytics_dashboard",
+        "investor_dashboard",
+        "websocket_test_client"
+      ]
+    },
+    "fraud_detection.web.api": {
+      "__all__": [
+        "admin_dashboard_api",
+        "agent_dashboard_api",
+        "analytics_dashboard_api",
+        "investor_dashboard_api",
+        "business_storytelling_engine"
+      ]
+    }
+  },
+  "errors": [],
+  "package_structure": {
+    "exists": true,
+    "init_files_count": 14,
+    "subdirectories": [
+      "agents",
+      "core",
+      "external",
+      "memory",
+      "reasoning",
+      "streaming",
+      "web"
+    ]
+  }
+}

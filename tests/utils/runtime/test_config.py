@@ -27,7 +27,7 @@ class TestProjectConfiguration:
         """Test loading project config with single agent."""
         from pathlib import Path
 
-        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "project_config_single.yaml"
+        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_single.yaml"
         project_config = load_config(fixture_path)
 
         assert project_config.default_agent == "test-agent"
@@ -44,7 +44,7 @@ class TestProjectConfiguration:
         """Test loading project config with multiple agents."""
         from pathlib import Path
 
-        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "project_config_multiple.yaml"
+        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_multiple.yaml"
         project_config = load_config(fixture_path)
 
         assert project_config.default_agent == "chat-agent"
@@ -68,7 +68,7 @@ class TestProjectConfiguration:
         """Test getting specific agent config."""
         from pathlib import Path
 
-        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "project_config_multiple.yaml"
+        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_multiple.yaml"
         project_config = load_config(fixture_path)
 
         # Get specific agent
@@ -81,7 +81,7 @@ class TestProjectConfiguration:
         """Test getting default agent config."""
         from pathlib import Path
 
-        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "project_config_multiple.yaml"
+        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_multiple.yaml"
         project_config = load_config(fixture_path)
 
         # Get default agent (no name specified)
@@ -120,7 +120,7 @@ class TestProjectConfiguration:
         """Test error handling for agent config retrieval."""
         from pathlib import Path
 
-        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "project_config_single.yaml"
+        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_single.yaml"
         project_config = load_config(fixture_path)
 
         # Test non-existent agent
@@ -135,7 +135,7 @@ class TestProjectConfiguration:
         from pathlib import Path
 
         # Load original config
-        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "project_config_multiple.yaml"
+        fixture_path = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_multiple.yaml"
         original_config = load_config(fixture_path)
 
         # Save to temp path
@@ -156,8 +156,8 @@ class TestProjectConfiguration:
         from pathlib import Path
 
         # Test project format files
-        single_fixture = Path(__file__).parent.parent.parent / "fixtures" / "project_config_single.yaml"
-        multiple_fixture = Path(__file__).parent.parent.parent / "fixtures" / "project_config_multiple.yaml"
+        single_fixture = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_single.yaml"
+        multiple_fixture = Path(__file__).parent.parent.parent / "fixtures" / "data" / "project_config_multiple.yaml"
 
         assert is_project_config_format(single_fixture)
         assert is_project_config_format(multiple_fixture)

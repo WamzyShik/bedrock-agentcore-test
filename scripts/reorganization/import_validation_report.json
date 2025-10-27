@@ -1,0 +1,277 @@
+{
+  "timestamp": "2025-10-22T09:37:29.688206",
+  "total_modules": 67,
+  "successful_imports": 36,
+  "failed_imports": 31,
+  "modules": {
+    "fraud_detection": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.bedrock.agent_communication": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.bedrock.agent_orchestrator": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.bedrock.agent_permissions": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.bedrock.bedrock_config": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.bedrock.setup_agent": {
+      "success": false,
+      "error": "ImportError: No module named 'bedrock_config'"
+    },
+    "fraud_detection.agents.coordination": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.coordination.agent_coordination": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.coordination.agent_coordination.communication_protocol": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.coordination.agent_coordination.decision_aggregation": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.coordination.agent_coordination.test_communication_protocol": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.coordination.agent_coordination.test_decision_aggregation": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.coordination.agent_coordination.test_workload_distribution": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.coordination.agent_coordination.workload_distribution": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.specialized": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.specialized.specialized_agents": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.base_agent": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.agents.specialized.specialized_agents.compliance_agent": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.pattern_detector": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.risk_assessor": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.test_compliance_agent": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.test_pattern_detector": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.test_risk_assessor": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.test_transaction_analyzer": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.agents.specialized.specialized_agents.transaction_analyzer": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.core": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.core.fraud_detection_agent": {
+      "success": false,
+      "error": "ImportError: No module named 'scripts.utilities'"
+    },
+    "fraud_detection.core.fraud_detection_api": {
+      "success": false,
+      "error": "ImportError: No module named 'flask_limiter'"
+    },
+    "fraud_detection.core.transaction_processing_pipeline": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.core.unified_fraud_detection_system": {
+      "success": false,
+      "error": "ImportError: No module named 'infrastructure'"
+    },
+    "fraud_detection.external": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.external.fraud_database": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.external.geolocation_services": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.external.identity_verification": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.external.tool_integrator": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.memory": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.memory.context_manager": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.memory.dynamodb_config": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.memory.memory_manager": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.memory.models": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.memory.pattern_learning": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.adaptive_integration": {
+      "success": false,
+      "error": "ImportError: No module named 'chain_of_thought'"
+    },
+    "fraud_detection.reasoning.adaptive_reasoning": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.audit_trail": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.chain_of_thought": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.compliance_reporting": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.confidence_scoring": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.decision_explanation_interface": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.reasoning.explanation_generator": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.explanation_interface": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.explanation_validator": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.reasoning_trail": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.reasoning.step_tracker": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.streaming": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.streaming.event_response_system": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.streaming.scalable_event_processor": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.streaming.transaction_stream_processor": {
+      "success": false,
+      "error": "ImportError: No module named 'src'"
+    },
+    "fraud_detection.web": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.web.api": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.web.api.admin_dashboard_api": {
+      "success": false,
+      "error": "ImportError: No module named 'fraud_detection.web.models'"
+    },
+    "fraud_detection.web.api.agent_dashboard_api": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.web.api.analytics_dashboard_api": {
+      "success": true,
+      "error": ""
+    },
+    "fraud_detection.web.api.business_storytelling_engine": {
+      "success": false,
+      "error": "ImportError: No module named 'fraud_detection.web.models'"
+    },
+    "fraud_detection.web.api.investor_dashboard_api": {
+      "success": false,
+      "error": "ImportError: No module named 'fraud_detection.web.models'"
+    },
+    "fraud_detection.web.dashboards": {
+      "success": true,
+      "error": ""
+    }
+  },
+  "summary": {}
+}

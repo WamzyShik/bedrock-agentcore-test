@@ -14,7 +14,7 @@ from datetime import datetime
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from stress_testing.models import HeroMetrics, BusinessMetrics, SystemMetrics
-from stress_testing.dashboards.business_storytelling_engine import (
+from src.fraud_detection.web.api.business_storytelling_engine import (
     BusinessStorytellingEngine,
     InvestorProfile,
     NarrativeStyle

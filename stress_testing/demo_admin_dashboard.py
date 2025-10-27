@@ -28,7 +28,7 @@ async def demo_admin_dashboard():
     print("="*80 + "\n")
     
     # Import components
-    from stress_testing.dashboards.admin_dashboard_api import AdminDashboardAPI
+    from src.fraud_detection.web.api.admin_dashboard_api import AdminDashboardAPI
     from stress_testing.orchestrator.stress_test_orchestrator import StressTestOrchestrator
     from stress_testing.models import StressTestConfig
     

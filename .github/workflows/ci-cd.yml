@@ -20,6 +20,12 @@ on:
 env:
   PYTHON_VERSION: '3.11'
   AWS_REGION: 'us-east-1'
+  # Path variables for reorganized structure
+  SRC_PATH: 'src'
+  TESTS_PATH: 'tests'
+  INFRASTRUCTURE_PATH: 'infrastructure'
+  SCRIPTS_PATH: 'scripts'
+  EXAMPLES_PATH: 'examples'
 
 jobs:
   # Lint and format check
@@ -107,7 +113,7 @@ jobs:
       
       - name: Run unit tests
         run: |
-          pytest tests/ -v --cov=. --cov-report=xml --cov-report=html --asyncio-mode=auto
+          pytest ${{ env.TESTS_PATH }}/ -v --cov=${{ env.SRC_PATH }} --cov-report=xml --cov-report=html --asyncio-mode=auto
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
@@ -194,8 +200,8 @@ jobs:
       
       - name: Deploy infrastructure
         run: |
-          cd aws_infrastructure
-          python deploy_full_infrastructure.py --environment dev --region ${{ env.AWS_REGION }}
+          cd ${{ env.INFRASTRUCTURE_PATH }}/aws
+          python deployment/deploy_full_infrastructure.py --environment dev --region ${{ env.AWS_REGION }}
       
       - name: Deploy Lambda functions
         run: |
@@ -211,7 +217,7 @@ jobs:
       
       - name: Run smoke tests
         run: |
-          python tests/run_all_tests.py --quick --environment dev
+          python ${{ env.SCRIPTS_PATH }}/development/run_all_tests.py --quick --environment dev
       
       - name: Notify deployment
         uses: 8398a7/action-slack@v3
@@ -250,8 +256,8 @@ jobs:
       
       - name: Deploy infrastructure
         run: |
-          cd aws_infrastructure
-          python deploy_full_infrastructure.py --environment staging --region ${{ env.AWS_REGION }}
+          cd ${{ env.INFRASTRUCTURE_PATH }}/aws
+          python deployment/deploy_full_infrastructure.py --environment staging --region ${{ env.AWS_REGION }}
       
       - name: Deploy Lambda functions
         run: |
@@ -265,7 +271,7 @@ jobs:
       
       - name: Run integration tests
         run: |
-          python tests/run_all_tests.py --suite integration --environment staging
+          python ${{ env.SCRIPTS_PATH }}/development/run_all_tests.py --suite integration --environment staging
       
       - name: Notify deployment
         uses: 8398a7/action-slack@v3
@@ -304,24 +310,24 @@ jobs:
       
       - name: Create backup
         run: |
-          ./scripts/backup_production.sh
+          ./${{ env.SCRIPTS_PATH }}/utilities/backup_production.sh
       
       - name: Deploy with blue-green strategy
         run: |
-          ./scripts/deploy_blue_green.sh production
+          ./${{ env.INFRASTRUCTURE_PATH }}/aws/deployment/deploy_blue_green.sh production
       
       - name: Run smoke tests
         run: |
-          python tests/run_all_tests.py --quick --environment prod
+          python ${{ env.SCRIPTS_PATH }}/development/run_all_tests.py --quick --environment prod
       
       - name: Monitor deployment
         run: |
-          ./scripts/monitor_deployment.sh --duration 15m
+          ./${{ env.SCRIPTS_PATH }}/utilities/monitor_deployment.sh --duration 15m
       
       - name: Rollback on failure
         if: failure()
         run: |
-          ./scripts/rollback_deployment.sh production
+          ./${{ env.INFRASTRUCTURE_PATH }}/aws/deployment/rollback_deployment.sh production
       
       - name: Notify deployment
         uses: 8398a7/action-slack@v3

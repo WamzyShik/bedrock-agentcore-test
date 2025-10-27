@@ -1,4 +1,4 @@
-"""Centralized logging configuration for bedrock-agentcore-starter-toolkit."""
+"""Centralized logging configuration for starjam."""
 
 import logging
 
@@ -6,7 +6,7 @@ _LOGGING_CONFIGURED = False
 
 
 def setup_toolkit_logging(mode: str = "sdk") -> None:
-    """Setup logging for bedrock-agentcore-starter-toolkit.
+    """Setup logging for starjam.
 
     Args:
         mode: "cli" or "sdk" (defaults to "sdk")
@@ -47,7 +47,7 @@ def _setup_cli_logging() -> None:
 def _setup_sdk_logging() -> None:
     """Setup logging for SDK usage (notebooks, scripts, imports) with StreamHandler."""
     # Configure logger for ALL toolkit modules (ensures all operation logs appear)
-    toolkit_logger = logging.getLogger("bedrock_agentcore_starter_toolkit")
+    toolkit_logger = logging.getLogger("starjam")
 
     if not toolkit_logger.handlers:
         handler = logging.StreamHandler()

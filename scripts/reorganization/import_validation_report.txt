@@ -1,0 +1,110 @@
+================================================================================
+IMPORT VALIDATION REPORT
+================================================================================
+Timestamp: 2025-10-22T09:37:29.688206
+Total Modules: 67
+Successful Imports: 36
+Failed Imports: 31
+
+FAILED IMPORTS:
+--------------------------------------------------------------------------------
+
+❌ fraud_detection.agents.bedrock.setup_agent
+   ImportError: No module named 'bedrock_config'
+
+❌ fraud_detection.agents.coordination.agent_coordination.test_communication_protocol
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.coordination.agent_coordination.test_decision_aggregation
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.coordination.agent_coordination.test_workload_distribution
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.compliance_agent
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.pattern_detector
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.risk_assessor
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.test_compliance_agent
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.test_pattern_detector
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.test_risk_assessor
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.test_transaction_analyzer
+   ImportError: No module named 'src'
+
+❌ fraud_detection.agents.specialized.specialized_agents.transaction_analyzer
+   ImportError: No module named 'src'
+
+❌ fraud_detection.core.fraud_detection_agent
+   ImportError: No module named 'scripts.utilities'
+
+❌ fraud_detection.core.fraud_detection_api
+   ImportError: No module named 'flask_limiter'
+
+❌ fraud_detection.core.transaction_processing_pipeline
+   ImportError: No module named 'src'
+
+❌ fraud_detection.core.unified_fraud_detection_system
+   ImportError: No module named 'infrastructure'
+
+❌ fraud_detection.external
+   ImportError: No module named 'src'
+
+❌ fraud_detection.external.fraud_database
+   ImportError: No module named 'src'
+
+❌ fraud_detection.external.geolocation_services
+   ImportError: No module named 'src'
+
+❌ fraud_detection.external.identity_verification
+   ImportError: No module named 'src'
+
+❌ fraud_detection.external.tool_integrator
+   ImportError: No module named 'src'
+
+❌ fraud_detection.reasoning.adaptive_integration
+   ImportError: No module named 'chain_of_thought'
+
+❌ fraud_detection.reasoning.decision_explanation_interface
+   ImportError: No module named 'src'
+
+❌ fraud_detection.streaming
+   ImportError: No module named 'src'
+
+❌ fraud_detection.streaming.event_response_system
+   ImportError: No module named 'src'
+
+❌ fraud_detection.streaming.scalable_event_processor
+   ImportError: No module named 'src'
+
+❌ fraud_detection.streaming.transaction_stream_processor
+   ImportError: No module named 'src'
+
+❌ fraud_detection.web.api.admin_dashboard_api
+   ImportError: No module named 'fraud_detection.web.models'
+
+❌ fraud_detection.web.api.business_storytelling_engine
+   ImportError: No module named 'fraud_detection.web.models'
+
+❌ fraud_detection.web.api.investor_dashboard_api
+   ImportError: No module named 'fraud_detection.web.models'
+
+SUMMARY:
+--------------------------------------------------------------------------------
+Success Rate: 53.7%
+
+⚠️  31 import(s) failed validation
+================================================================================
